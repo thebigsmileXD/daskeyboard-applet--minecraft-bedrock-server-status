@@ -8,12 +8,15 @@ The first key indicates the server is online, proceeding keys indicator the numb
 ## Example
 
 Example where the Minecraft server is online, but there are no players.
+
 ![Minecraft server is online.](assets/online-noplayers.png "Minecraft server is online.")
 
 Example where the Minecraft server is online, and there is 1 player.
+
 ![Minecraft server is online with 1 player.](assets/online-oneplayer.png "Minecraft server is online with 1 player.")
 
 Example where the Minecraft server is offline.
+
 ![Minecraft server is offline.](assets/offline.png "Minecraft server is offline.")
 
 ## Changelog
@@ -41,9 +44,11 @@ If you're on Windows see [this guide](https://phoenixnap.com/kb/yarn-windows) on
 5. Navigate to the folder holding the Applet and click OK.
 
 6. Position the row over your desired keys.
+
 ![Positioning the keys.](assets/setup-1.png "Positioning the keys.")
 
 7. Enter the server's IP address, port and colour for online and offline.
+
 ![Choosing options.](assets/setup-2.png "Choosing options.")
 
 ## Compiling
@@ -60,13 +65,7 @@ A VSCode task inside tasks.json will run the index.js file for you for testing, 
 
 ## Running tests
 
-1. Launch a Minecraft server or locate one you want to use for testing.
-
-2. Edit `test/config.json` and input the IP address of your Minecraft server.
-
-3. Run `yarn test`.
-
-4. Other settings inside `config.json` can be modified to reflect different return values from a Minecraft server.
+1. Run `yarn test`.
 
 ## Contributions
 
