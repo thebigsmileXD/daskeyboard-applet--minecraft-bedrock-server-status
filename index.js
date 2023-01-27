@@ -32,7 +32,7 @@ class MinecraftStatus extends q.DesktopApp {
                 pointsList.push(new q.Point(onlineColour))
             }
 
-            // Populate remaining spaces with offline colours. I would clear them instead but no idea how.
+            // Populate remaining spaces with offline colors. I would clear them instead but no idea how.
             for (let a=max; a<11; a++) {
                 pointsList.push(new q.Point(offlineColour))
             }
@@ -45,10 +45,8 @@ class MinecraftStatus extends q.DesktopApp {
 
         } else {
         // If Server is offline.
-        //console.log(Array.from({ length: 11 }).map((_,i) => i === 0 ? new q.Point(offlineColour) : new q.Point("#000000")))
             return new q.Signal({
                 points: [
-                    //[new q.Point(offlineColour)]
                     Array.from({ length: 11 }).map((_,i) => i === 0 ? new q.Point(offlineColour) : new q.Point(offlineColour))
                 ],
                 name: "Minecraft server offline!",

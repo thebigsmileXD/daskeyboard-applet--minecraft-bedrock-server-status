@@ -1,8 +1,8 @@
 {
   "name": "daskeyboard-applet--minecraft-status",
   "displayName": "Minecraft Server Status",
-  "version": "1.0",
-  "description": "See Minecraft status and player count.",
+  "version": "1.0.0",
+  "description": "Tracks Minecraft server status and player count.",
   "longDescription": "Displays whether the target Minecraft server is online or not, shows number of players online by lighting up 1 - 9 keys.",
   "officialProductName": "Minecraft Server Status",
   "appUrl": "https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status",
@@ -50,8 +50,8 @@
     "questions": [
       {
         "key": "serverAddress",
-        "label": "Enter the server address of the Minecraft server you want to monitor.",
-        "help": "This is usually an IP address or a domain name of the Minecraft server e.g. 192.168.1.10",
+        "label": "Server address of the Minecraft server",
+        "help": "This is an IP address or a domain name of the Minecraft server e.g. 192.168.1.10.",
         "value": "192.168.1.10",
         "required": true,
         "order": 1,
@@ -59,8 +59,8 @@
       },
       {
         "key": "serverPort",
-        "label": "Enter the server port of the Minecraft server you want to monitor.",
-        "help": "This is usually 25565",
+        "label": "Server port of the Minecraft server",
+        "help": "This is usually 25565.",
         "value": "25565",
         "required": true,
         "order": 1,
@@ -68,8 +68,7 @@
       },
       {
         "key": "onlineColour",
-        "label": "Enter the colour that will be used when the server or player is online.",
-        "help": "I suggest green",
+        "label": "Color when the server or any player is online",
         "value": "#00FF00",
         "required": true,
         "order": 2,
@@ -77,13 +76,15 @@
       },
       {
         "key": "offlineColour",
-        "label": "Enter the colour that will be used when the server is offline.",
-        "help": "I suggest red",
+        "label": "Color when the server is offline",
         "value": "#FF0000",
         "required": true,
         "order": 3,
         "controlType": "color"
       }
     ]
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
   }
 }
