@@ -51,7 +51,7 @@ describe('MinecraftStatus', function () {
   describe('#getMinecraftStatus() for Bedrock', function () {
     it('gets Bedrock Minecraft server status', function () {
       app.getMinecraftStatus(config0PlayersBedrock.applet.user.serverAddress, config0PlayersBedrock.applet.user.serverPort, config0PlayersBedrock.applet.user.serverType).then(res => {
-        console.debug("Bedrock Minecraft Server Response: " + $JSON.stringify(res));
+        console.debug("Bedrock Minecraft Server Response: " + JSON.stringify(res));
           // Test if target is an online Bedrock Minecraft server by checking if this value exists and is a number.
           assert.equal(res.players.online, "number")
       })
