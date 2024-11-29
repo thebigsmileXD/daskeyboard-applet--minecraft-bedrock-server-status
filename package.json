@@ -1,9 +1,9 @@
 {
   "name": "daskeyboard-applet--minecraft-status",
   "displayName": "Minecraft Server Status",
-  "version": "1.0.0",
-  "description": "Tracks Minecraft server status and player count.",
-  "longDescription": "Displays whether the target Minecraft server is online or not, shows number of players online by lighting up 1 - 9 keys.",
+  "version": "1.1.0",
+  "description": "Tracks Minecraft server status and player count for Java and Bedrock servers.",
+  "longDescription": "Displays whether the target Minecraft server is online or not, shows number of players online by lighting up 1 - 9 keys, supports both Java and Bedrock server types.",
   "officialProductName": "Minecraft Server Status",
   "appUrl": "https://gitlab.legitcorp.com/daskeyboard/minecraft-server-status",
   "publisherName": "Legitcorp",
@@ -23,6 +23,7 @@
   "readMeUrl": "README.md",
   "readMeEndUserUrl": "README_ENDUSER.md",
   "dependencies": {
+    "bedrock-protocol": "^3.41.0",
     "daskeyboard-applet": "^2.11.5",
     "mc-server-status": "^2.0.2"
   },
@@ -60,18 +61,36 @@
       {
         "key": "serverPort",
         "label": "Server port of the Minecraft server",
-        "help": "This is usually 25565.",
+        "help": "Default ports are 25565 for Java servers, 19132 for Bedrock servers.",
         "value": "25565",
         "required": true,
-        "order": 1,
+        "order": 2,
         "controlType": "textbox"
+      },
+      {
+        "key": "serverType",
+        "label": "Minecraft server type",
+        "help": "Choose between Java and Bedrock server types",
+        "required": true,
+        "order": 3,
+        "controlType": "dropdown",
+        "options": [
+          {
+            "key": "java",
+            "value": "Java"
+          },
+          {
+            "key": "bedrock",
+            "value": "Bedrock"
+          }
+        ]
       },
       {
         "key": "onlineColour",
         "label": "Color when the server or any player is online",
         "value": "#00FF00",
         "required": true,
-        "order": 2,
+        "order": 4,
         "controlType": "color"
       },
       {
@@ -79,12 +98,12 @@
         "label": "Color when the server is offline",
         "value": "#FF0000",
         "required": true,
-        "order": 3,
+        "order": 5,
         "controlType": "color"
       }
     ]
   },
   "devDependencies": {
-    "mocha": "^5.2.0"
+    "mocha": "10.8.2"
   }
 }

@@ -3,6 +3,7 @@
         "user": {
             "serverAddress": "127.0.0.1",
             "serverPort": "25565",
+            "serverType": "java",
             "onlineColour": "#08F26E",
             "offlineColour": "#FF0000"
         }
@@ -11,6 +12,6 @@
         "online": 1
     },
     "description": {
-        "text": "A Test Minecraft server description with 1 player."
+        "text": "A Test Minecraft Java server description with 1 player."
     }
 }

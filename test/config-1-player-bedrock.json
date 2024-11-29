@@ -2,16 +2,16 @@
     "applet": {
         "user": {
             "serverAddress": "127.0.0.1",
-            "serverPort": "25565",
-            "serverType": "java",
+            "serverPort": "19132",
+            "serverType": "bedrock",
             "onlineColour": "#08F26E",
             "offlineColour": "#FF0000"
         }
     },
     "players": {
-        "online": 0
+        "online": 1
     },
     "description": {
-        "text": "A Test Minecraft Java server description with 0 players."
+        "text": "A Test Minecraft Bedrock server description with 1 player."
     }
 }
